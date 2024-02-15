@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Baloo+Bhaijaan+2&display=swap");
+body {
+  /* margin: 0; padding: 0; - verməyimizin səbəbi  boxsumuzun daxili və xarici kənarlarından boşluğu olmasın.*/
+  /* box-sizing: border-box; - verməyimizin səbəbi isə hər hansı hissəyə padding və border verildikdə boxsumuzun ölçüsü dəyişməsin. Hansı
+    ki padding + borderin cəmi qədər */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(245, 246, 250, 255);
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 35%;
+  height: 90vh;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  background-color: rgba(248, 248, 246, 255);
+}
+.container .wedding-heading {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  font-size: 100px;
+  font-family: "Monsieur La Doulaise", cursive;
+  transform: rotate(-15deg);
+  height: 100px;
+}
+.container .heading-main-text {
+  font-size: 160px;
+  height: 160px;
+}
+.container h2 {
+  width: 100%;
+  font-size: 24px;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 5px;
+}
+.container .wedding-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.container .wedding-info p {
+  font-size: 20px;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  letter-spacing: 4px;
+  margin: 0;
+}
+.container .wedding-info .wedding-date {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+@media screen and (max-width: 1300px) {
+    .container{
+        width: 55%;
+    }
+}
+@media screen and (max-width: 900px) {
+    .container{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container{
+        width: 95%;
+    }
+    .container .heading-main-text {
+        font-size: 100px;
+        height: 100px;
+      }
+}
